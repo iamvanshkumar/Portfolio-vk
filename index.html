@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+    <style>
+        * {
+            font-family: "Fira Sans", sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.154);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+        
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 200vh;
+            z-index: 10;
+        }
+        
+        #praticle-hero {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: 10;
+            filter: blur(1px);
+        }
+        
+        .clients img {
+            filter: grayscale(1);
+            transition: filter 0.3s ease;
+        }
+        
+        .clients img:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+        }
+        
+        .zoom {
+            transition: transform .5s;
+        }
+        
+        .zoom:hover {
+            transform: scale(1.01);
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 flex justify-between items-center p-6 z-50">
+        <div class="text-2xl font-bold">
+            <a href="#" class="text-indigo-500">Vansh Kumar</a>
+        </div>
+        <nav class="flex space-x-6">
+            <a href="#home" class="text-indigo-500 font-semibold">Home</a>
+            <a href="#about" class="text-gray-600 hover:text-indigo-500">About Me</a>
+            <a href="#academics" class="text-gray-600 hover:text-indigo-500">Academics</a>
+            <a href="#experience" class="text-gray-600 hover:text-indigo-500">Experience</a>
+            <a href="#projects" class="text-gray-600 hover:text-indigo-500">Projects</a>
+            <a href="#certifications" class="text-gray-600 hover:text-indigo-500">Certifications</a>
+            <a href="#contact" class="text-gray-600 hover:text-indigo-500">Contact</a>
+        </nav>
+        <a href="#" class="bg-indigo-500 text-white flex items-center px-4 py-2 rounded-full hover:bg-indigo-600 focus:outline-none transition-all duration-200">
+            <i class='bx bxs-file-pdf pr-1'></i> Resume
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+
+
+
+    <div id="praticle-hero"></div>
+    <section id="home" class="h-screen w-full flex flex-col lg:flex-row items-center lg:justify-between p-16 bg-white relative overflow-hidden">
+        <div class="lg:w-2/3 text-center lg:text-left">
+            <h1 class="text-7xl lg:text-8xl font-extrabold text-gray-900">
+                Hello <span class="wave">👋</span> I'm <br>
+                <span class="text-indigo-500 text-8xl lg:text-9xl">Vansh Kumar</span>
+            </h1>
+            <p class="text-gray-500 text-lg mt-4">A Passionate <span class="font-semibold text-gray-800">Web
+                    Developer</span></p>
+            <p class="text-gray-500">Crafting data-driven solutions and designing intuitive, user-friendly web experiences
+            </p>
+            <div class="mt-8 space-x-2">
+                <a href="#" class="bg-indigo-500 text-white font-semibold px-8 py-3 rounded-full hover:bg-indigo-600 focus:outline-none transition-all duration-200">Hire
+                    Me</a>
+                <a href="#" class="border-2 border-indigo-500 text-indigo-500 font-semibold px-4 py-3 rounded-full hover:bg-indigo-500 hover:text-white transition-all duration-200 focus:outline-none">My
+                    Resume</a>
+            </div>
+        </div>
+        <img src="" alt="icons">
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="flex flex-col gap-y-8 items-center lg:justify-between p-16 bg-indigo-500 text-white">
+        <h1 class="text-8xl font-extrabold no-wrap text-white">
+            ABOUT <span style="-webkit-text-fill-color: transparent;-webkit-text-stroke: 3px #ffffff;">ME</span>
+        </h1>
+        <div class="grid grid-cols-2 w-full gap-4">
+            <div class="">
+                <img src="" alt="icons">
+            </div>
+            <div class="">
+                <p class="text-gray-50 text-lg"><b>I’m Vansh Kumar</b>, a passionate Web Developer with a strong foundation in <b>Information Technology</b>, thanks to my degree from <b>Uttaranchal University</b> in Dehradun. My journey in tech has been fueled by a curiosity for the
+                    latest advancements and a love for crafting seamless web experiences. Whether it's developing data-driven solutions or designing intuitive user interfaces, I bring a blend of creativity and technical expertise to every project.
+                </p>
+                <p class="text-gray-50 text-lg mt-4">My hands-on experience began at OPTO Electronics under the Ministry of Defence, where I dove into the world of server operations and networking. It was there that I contributed to an intranet website project that continues to be utilized,
+                    solidifying my understanding of how technology supports organizational goals.</p>
+                <p class="text-gray-50 text-lg mt-4">My career took shape during a year-long stint as a Full Stack Web Developer at AAA Management in New Delhi, where I sharpened my skills in modern web technologies, including JavaScript, HTML, CSS, Tailwind CSS, PHP, and MySQL. Today, I
+                    run Techsaar, my own web and IT solutions agency, where I've had the pleasure of working on diverse projects like an instant grocery delivery platform and a predictive auto dialer for call centers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- vision -->
+    <section class="flex flex-col gap-y-12 items-center lg:justify-between p-16 bg-white">
+        <div class="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-4">
+            <div class="gap-8 flex flex-col">
+                <h1 class="text-8xl text-indigo-500 font-black uppercase text-left">
+                    I Turn Your
+                    <span style="-webkit-text-fill-color: transparent;-webkit-text-stroke: 3px #191919;">
+                        Vision
+                    </span> Into <em>Reality</em>
+                </h1>
+                <p class="text-lg text-gray-600">
+                    I turn your vision into reality by blending creativity with technical expertise to craft digital experiences that truly connect with your audience. Whether it's building a seamless website, developing a robust application, or enhancing user interactions,
+                    I take your ideas and transform them into solutions that are not only visually appealing but also highly functional and impactful. My goal is to bring your concepts to life, delivering results that exceed expectations and drive your
+                    success in the digital world.
+                </p>
+            </div>
+            <div>
+                <img src="./assets/img/hero/vision.png" alt="icon">
+            </div>
+        </div>
+    </section>
+    <script type="module">
+        import { annotate } from 'https://unpkg.com/rough-notation?module'; let annotation; function annotateElement() { const n1 = document.querySelector('em'); if (annotation) { annotation.remove(); } annotation = annotate(n1, { type: 'circle', color: '#191919'
+        }); annotation.show(); } setInterval(annotateElement, 2000);
+    </script>
+
+
+    <div id="particles-js"></div>
+    <section class="flex flex-col gap-y-12  p-16 bg-indigo-500 text-white">
+        <div class="flex flex-col w-full items-end z-40">
+            <h1 class="text-8xl text-white font-black uppercase">
+                MY WORK
+            </h1>
+            <p class="text-xl font-normal text-gray-100">
+                Take a look at my projects
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 md:gap-4 text-indigo-500 z-40">
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
+                <a href="https://techsaar.co.in/" target="_blank">
+                    <img src="./assets/img/projects/techsaar.png" style="width: 100%;height: 230px;" class="zoom mb-2" alt="img_ezdial" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">Techsaar.co.in : YOUR SAAR TO TECH EXCELLENCE</h2>
+                <p class="text-gray-600">Your one-stop destination for cutting-edge technology solutions and digital services, specialize in delivering top-notch software solutions and comprehensive digital services tailored to your unique needs.
+                </p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
+                <a href="https://ezdial.techsaar.co.in/" target="_blank">
+                    <img src="./assets/img/projects/ezdial_website.png" style="width: 100%;height: 230px;" class="zoom mb-2" alt="img_ezdial" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">EzDial Website: Partner in Call Centre Excellence</h2>
+                <p class="text-gray-600">Your one-stop destination for cutting-edge technology solutions and digital services, specialize in delivering top-notch software solutions and comprehensive digital services tailored to your unique needs.
+                </p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
+                <a href="https://ezdial.techsaar.co.in/" target="_blank">
+                    <img src="./assets/img/projects/ezdial.png" style="width: 100%;height: 230px;" class="zoomtext-gray-600 mb-2" alt="img_ezdial" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">EzDial: Efficient Outbound Auto Dialer</h2>
+                <p class="text-gray-600">Boost your sales and streamline your outbound calling campaigns with EzDial, the powerful and user-friendly auto dialer solution. Experience seamless integration, real-time analytics, and superior call management for optimal performance.
+                </p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://newapnabazar.online/Home/" target="_blank">
+                    <img src="./assets/img/projects/grocery_delivery_app.png" style="width: 100%;height: 230px;" class="zoomtext-gray-600 mb-2" alt="img_apnaBazar" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">Instant Grocery Delivery App</h2>
+                <p class="text-gray-600">Introducing our Instant Grocery Delivery Web App, a revolutionary solution designed to transform the way you shop for essentials. Say goodbye to long queues, time-consuming trips to the store, and the hassle of juggling groceries.</p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="100">
+                <a href="https://guidemap.in/" target="_blank">
+                    <img src="./assets/img/projects/guidemap_app.png" style="width: 100%;height: 230px;" class="zoomtext-gray-600 mb-2" alt="img_guidemap" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">GuideMap : Free Handwritten Notes </h2>
+                <p class="text-gray-600">GuideMap provides free, high-quality handwritten notes, offering clear and concise explanations to support your studies and enhance understanding.</p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
+                <a hred="#">
+                    <img src="./assets/img/projects/kp_app.png" style="width: 100%;height: 230px;" class="zoomtext-gray-600 mb-2" alt="img_devotionalWalk" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">Pahology Lab Web-Application</h2>
+                <p class="text-gray-600">
+                    "A cutting-edge pathology lab web application designed for streamlined sample analysis, efficient data management, and real-time diagnostic reporting.
+                </p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://www.theexamify.com/" target="_blank">
+                    <img src="./assets/img/projects/examify_app.png" style="width: 100%;height: 230px;" class="zoomtext-gray-600 mb-2" alt="img_examify" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">TheExamify : The destination for Learners</h2>
+                <p class="text-gray-600">TheExamify is an e-learning platform offering comprehensive courses, study materials, and thesis assistance for competitive exams.
+                </p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="100">
+                <a href="https://www.devotionwalk.com/" target="_blank">
+                    <img src="./assets/img/projects/devotional_walk_app.png" style="width: 100%;height: 230px;" class="zoomtext-gray-600 mb-2" alt="img_devotionalWalk" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">Devotion Walk : Spiritual Path for 'self'</h2>
+                <p class="text-gray-600">
+                    "Devotion Walk" is your serene sanctuary on the spiritual journey of self-discovery and enlightenment.
+                </p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="100">
+                <a href="https://www.rhythmwalk.net/" target="_blank">
+                    <img src="./assets/img/projects/rythmwalk_app.webp" style="width: 100%;height: 230px;" class="zoomtext-gray-600 mb-2" alt="img_rythmwalk" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">Rythmwalk : The Magic of Music</h2>
+                <p class="text-gray-600">Unleash your inner rockstar with our immersive online lessons, where melody meets mastery , explore our website and learn more about our programs and instructors.
+                </p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://harmonoid.com/" target="_blank">
+                    <img src="./assets/img/projects/harmonoid_app.png" style="width: 100%;height: 230px;" class="zoomtext-gray-600 mb-2" alt="img_devotionalWalk" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">Harmonoid : Plays & manages your music</h2>
+                <p class="text-gray-600">
+                    "Harmonoid is a music application designed to play and manage your music effortlessly.
+                </p>
+            </div>
+            <div class="overflow-hidden cursor-pointer p-4 bg-white rounded-lg shadow-md" data-aos="fade-left" data-aos-delay="100">
+                <a href="https://aurbataoo.com/" target="_blank">
+                    <img src="./assets/img/projects/aurbataoo_app.png" style="width: 100%;height: 230px;" class="zoomtext-gray-600 mb-2" alt="img_devotionalWalk" draggable="false">
+                </a>
+                <h2 class="text-lg font-semibold">AurBataoo : E-commerce Website</h2>
+                <p class="text-gray-600">
+                    "AurBataoo is a trendy e-commerce platform specializing in stylish and affordable clothing, delivering the latest fashion trends right to your doorstep.
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white p-10">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">Contact</h2>
+        <p class="text-gray-600 text-lg mb-6">Feel free to reach out to me through email or connect with me on LinkedIn.
+        </p>
+        <div class="flex space-x-4 mt-6">
+            <a href="mailto:your.email@example.com" class="text-indigo-500 hover:text-indigo-600 text-xl">
+                <i class='bx bx-envelope'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-indigo-500 hover:text-indigo-600 text-xl">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://github.com/yourprofile" target="_blank" class="text-indigo-500 hover:text-indigo-600 text-xl">
+                <i class='bx bxl-github'></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <p>&copy; 2024 Vansh Kumar. All rights reserved.</p>
+    </footer>
+    </main>
+
+    <!-- particles.js container -->
+    <div></div>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 400,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#fff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 10,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 500,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 2
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "bottom",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "bubble"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 0.5
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 4,
+                        "duration": 0.3,
+                        "opacity": 1,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);;
+    </script>
+
+
+
+    <script>
+        particlesJS("praticle-hero", {
+            "particles": {
+                "number": {
+                    "value": 160,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#4f46e5"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 1,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 7.891476416322726,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 4,
+                        "size_min": 0.3,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 600
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 250,
+                        "size": 0,
+                        "duration": 2,
+                        "opacity": 0,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 400,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);;
+    </script>
+</body>
+
+</html>
